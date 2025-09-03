@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Sistem Merit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1e293b;
+            background: linear-gradient(135deg, #f0f4f8, #e6e9f0);
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .info-card {
+            background-color: #f8fafc;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .info-card.rainbow-1 {
+            border-color: #FF6B6B;
+            background-color: #FFF2F2;
+        }
+        .info-card.rainbow-2 {
+            border-color: #FFD166;
+            background-color: #FFF9E0;
+        }
+        .info-card.rainbow-3 {
+            border-color: #06D6A0;
+            background-color: #E0FFF6;
+        }
+        .info-card h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #0c4a6e;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #0c4a6e;
+            padding-bottom: 0.5rem;
+        }
+        .info-card.rainbow-1 h2 { color: #d62828; border-bottom-color: #d62828; }
+        .info-card.rainbow-2 h2 { color: #f77f00; border-bottom-color: #f77f00; }
+        .info-card.rainbow-3 h2 { color: #048a60; border-bottom-color: #048a60; }
+
+        .info-card ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .info-card li {
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 0.75rem;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .info-card.rainbow-1 li { background-color: #ffc4c4; }
+        .info-card.rainbow-2 li { background-color: #ffe8a1; }
+        .info-card.rainbow-3 li { background-color: #8af4d8; }
+
+        .info-card li:before {
+            content: '✓';
+            font-weight: bold;
+            margin-right: 0.75rem;
+        }
+        .info-card.rainbow-1 li:before { color: #d62828; }
+        .info-card.rainbow-2 li:before { color: #f77f00; }
+        .info-card.rainbow-3 li:before { color: #048a60; }
+    </style>
+</head>
+<body class="bg-gray-100 p-8">
+
+    <div class="container">
+        <div class="text-center mb-10">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-teal-700 leading-tight">Materi Seputar Sistem Merit</h1>
+            <p class="mt-4 text-lg text-gray-600">Pelajari apa itu Sistem Merit dan mengapa ini penting dalam manajemen ASN.</p>
+        </div>
+
+        <!-- Sistem Merit Card -->
+        <div class="info-card rainbow-1">
+            <h2>Prinsip Dasar Sistem Merit</h2>
+            <p class="text-gray-700 mb-4">Sistem Merit adalah kebijakan dan manajemen ASN yang berdasarkan pada kualifikasi, kompetensi, dan kinerja secara adil dan wajar tanpa diskriminasi. Sistem ini bertujuan untuk menjamin keadilan dan objektivitas.</p>
+            <ul class="space-y-4">
+                <li><strong class="font-semibold">Kualifikasi, Kompetensi, & Kinerja:</strong> Manajemen ASN didasarkan pada ketiga faktor ini, bukan pada senioritas atau kedekatan.</li>
+                <li><strong class="font-semibold">Tujuan:</strong> Tujuan utamanya adalah menjamin keadilan dan objektivitas dalam setiap proses manajemen ASN.</li>
+            </ul>
+        </div>
+
+        <!-- Promosi & Diskriminasi Card -->
+        <div class="info-card rainbow-2">
+            <h2>Promosi dan Larangan Diskriminasi</h2>
+            <p class="text-gray-700 mb-4">Sistem Merit memastikan bahwa promosi dan penempatan ASN didasarkan pada kemampuan dan kontribusi, bukan faktor-faktor non-profesional.</p>
+            <ul class="space-y-4">
+                <li><strong class="font-semibold">Promosi Jabatan:</strong> Promosi didasarkan pada hasil penilaian kinerja dan kompetensi, memastikan bahwa yang terbaiklah yang menempati posisi.</li>
+                <li><strong class="font-semibold">Larangan Diskriminasi:</strong> Sistem Merit melarang diskriminasi dalam bentuk apa pun, termasuk berdasarkan latar belakang politik, jenis kelamin, ras, agama, atau asal-usul. Namun, **kinerja** adalah satu-satunya faktor yang menjadi dasar penilaian.</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
